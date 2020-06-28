@@ -7,7 +7,7 @@ function Layout({ children }) {
     <>
       <Head>
         <title>合同会社イブキ</title>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <Header/>
