@@ -1,0 +1,12 @@
+.wrapper::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('/room.jpg') center/cover no-repeat;
+  background-size: cover;
+  z-index: -1;
+}

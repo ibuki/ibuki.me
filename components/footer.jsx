@@ -2,9 +2,9 @@ const { Container } = require("react-bootstrap");
 
 function Footer() {
   return (
-    <Container as="footer" className="text-center">
+    <Container fluid='true' as="footer" className="text-center bg-white py-3">
       <hr />
-      <p className='my-5'>&copy; 合同会社イブキ 2020</p>
+      <p className='my-3'>&copy; 合同会社イブキ 2020</p>
     </Container>
   )
 }

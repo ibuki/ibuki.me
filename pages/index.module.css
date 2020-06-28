@@ -1,9 +1,5 @@
 .parallax {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-image: url('/room.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   color: white;
 }

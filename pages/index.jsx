@@ -46,8 +46,6 @@ export default function Home() {
         </Container>
       </Jumbotron>
 
-      <div className="py-5"></div>
-
       <Jumbotron fluid='true' className="bg-white">
         <Container className='text-center' id="member">
           <Row className='justify-content-center'>
@@ -69,8 +67,6 @@ export default function Home() {
           </Row>
         </Container>
       </Jumbotron>
-
-      <div className="py-5"></div>
 
       <Jumbotron fluid='true' className='bg-white'>
         <Container id="practice">
@@ -111,8 +107,6 @@ export default function Home() {
         </Container>
       </Jumbotron>
 
-      <div className="py-5"></div>
-
       <Jumbotron fluid='true' className={styles.parallax}>
         <Container id="company">
           <p className="h3 text-center">会社情報</p>
@@ -143,23 +137,21 @@ export default function Home() {
         </Container>
       </Jumbotron>
 
-      <div className="py-5"></div>
-
-      <Container>
-        <Row className='mt-3 justify-content-center'>
-          <Col md="10" lg="8">
-            <p className="h3 mb-4 text-center" id="contact">お仕事の依頼・お問い合わせ</p>
-            <p>フリーランスとして活動していますが、正社員で働く職場も探しています。</p>
-            <p>フリーランスとしての稼働では、成果物単位ではなく稼働時間に対して料金をいただきたいと考えています。現代で活躍できるアプリケーションは複雑で、事前に要件を決めきれるものではありません。まだ見ぬシステムを一緒に考えましょう。僕がお役に立てるかどうかわかるまでは料金はいただきません。</p>
-            <p>コードレビューが必要なリポジトリの提示でも、ジャストアイディア状態のビジネスプランでもなんでもご連絡ください。</p>
-            <p className='text-center py-5'>
-              <a href='https://forms.gle/W2PM7XgSSrEewoYF9' target='_blank' className="btn btn-success btn-lg">問い合わせフォーム</a>
-            </p>
-          </Col>
-        </Row>
-      </Container>
-
-      <div className="py-5"></div>
+      <Jumbotron fluid='true' className='bg-white'>
+        <Container>
+          <Row className='mt-3 justify-content-center'>
+            <Col md="10" lg="8">
+              <p className="h3 mb-4 text-center" id="contact">お仕事の依頼・お問い合わせ</p>
+              <p>フリーランスとして活動していますが、正社員で働く職場も探しています。</p>
+              <p>フリーランスとしての稼働では、成果物単位ではなく稼働時間に対して料金をいただきたいと考えています。現代で活躍できるアプリケーションは複雑で、事前に要件を決めきれるものではありません。まだ見ぬシステムを一緒に考えましょう。僕がお役に立てるかどうかわかるまでは料金はいただきません。</p>
+              <p>コードレビューが必要なリポジトリの提示でも、ジャストアイディア状態のビジネスプランでもなんでもご連絡ください。</p>
+              <p className='text-center py-5'>
+                <a href='https://forms.gle/W2PM7XgSSrEewoYF9' target='_blank' className="btn btn-success btn-lg">問い合わせフォーム</a>
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </Jumbotron>
     </Layout>
   )
 }
