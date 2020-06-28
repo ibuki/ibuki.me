@@ -6,7 +6,7 @@ function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>ReactJS with react-bootstrap</title>
+        <title>合同会社イブキ</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <div>
