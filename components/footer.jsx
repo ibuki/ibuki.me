@@ -4,7 +4,7 @@ function Footer() {
   return (
     <Container as="footer" className="text-center">
       <hr />
-      <p>&copy; 合同会社イブキ 2020</p>
+      <p className='my-5'>&copy; 合同会社イブキ 2020</p>
     </Container>
   )
 }

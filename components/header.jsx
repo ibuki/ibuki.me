@@ -12,9 +12,7 @@ function Header() {
           <Nav.Link href="#member">メンバー</Nav.Link>
           <Nav.Link href="#practice">プラクティス</Nav.Link>
           <Nav.Link href="#company">会社情報</Nav.Link>
-        </Nav>
-        <Nav className='ml-3'>
-          <Button variant="success" href='#contact'>お問い合わせ</Button>
+          <Nav.Link href="#company">お問い合わせ</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

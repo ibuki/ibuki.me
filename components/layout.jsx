@@ -9,9 +9,9 @@ function Layout({ children }) {
         <title>ReactJS with react-bootstrap</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <div className="wrapper">
+      <div>
         <Header/>
-        <div className="main">{children}</div>
+        <div>{children}</div>
         <Footer/>
       </div>
     </>
