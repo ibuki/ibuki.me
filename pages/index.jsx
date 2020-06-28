@@ -1,9 +1,8 @@
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Card, Col, Container, Jumbotron, ListGroup, Row } from 'react-bootstrap'
 import Layout from '../components/layout'
 import styles from './index.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faGithub ,faLinkedinIn ,faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
   return (
