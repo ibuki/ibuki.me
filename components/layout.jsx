@@ -9,6 +9,8 @@ function Layout({ children }) {
       <Head>
         <title>合同会社イブキ</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="合同会社イブキのWebサイト。コーディング支援やWebサイト開発を行います。" />
+        <meta name="og:image" content="https://ibuki.me/og.png" />
       </Head>
       <div className={styles.wrapper}>
         <Header/>
