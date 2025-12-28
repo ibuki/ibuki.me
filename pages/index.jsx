@@ -1,13 +1,13 @@
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Card, Col, Container, Jumbotron, ListGroup, Row } from 'react-bootstrap'
+import { Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
 import Layout from '../components/layout'
 import styles from './index.module.css'
 
 export default function Home() {
   return (
     <Layout>
-      <Jumbotron fluid='true' className={styles.parallax}>
+      <div className={`${styles.parallax} py-5`}>
         <Container id='home'>
           <p className="display-4">コードの品質が<br className="d-md-inline d-none" />気になっていませんか？</p>
           <p className="pt-3">
@@ -15,9 +15,9 @@ export default function Home() {
             合同会社イブキは、全てのコードの品質向上に努めます。
           </p>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className='bg-white'>
+      <div className='bg-white py-5'>
         <Container id='service'>
           <Row>
             <Col md="4" className='my-3'>
@@ -44,9 +44,9 @@ export default function Home() {
             </ListGroup>
           </Card>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className="bg-white">
+      <div className="bg-white py-5">
         <Container className='text-center' id="member">
           <Row className='justify-content-center'>
             <Col sm='10' md='8' lg="6">
@@ -66,9 +66,9 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className='bg-white'>
+      <div className='bg-white py-5'>
         <Container id="practice">
           <p className="h3 mb-5 text-center">重視するプラクティス</p>
           <div className="row featurette align-items-center">
@@ -105,9 +105,9 @@ export default function Home() {
             </div>
           </div>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className={styles.parallax}>
+      <div className={`${styles.parallax} py-5`}>
         <Container id="company">
           <p className="h3 text-center">会社情報</p>
           <Row className='justify-content-center mt-5'>
@@ -135,9 +135,9 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className='bg-white'>
+      <div className='bg-white py-5'>
         <Container>
           <Row className='mt-3 justify-content-center'>
             <Col md="10" lg="8">
@@ -151,7 +151,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+      </div>
     </Layout>
   )
 }
