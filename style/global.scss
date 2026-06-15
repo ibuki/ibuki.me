@@ -1,6 +1,7 @@
 // $headings-line-height: 1.5;
-$line-height-base: 1.65;
-@import '~bootstrap/scss/bootstrap.scss';
+@use 'bootstrap/scss/bootstrap' with (
+  $line-height-base: 1.65
+);
 
 body {
   // letter-spacing: -.05em;
