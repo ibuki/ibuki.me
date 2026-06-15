@@ -51,9 +51,6 @@ export default function Home() {
           <Row className='justify-content-center'>
             <Col sm='10' md='8' lg="6">
               <p className="h3 mb-5">代表社員</p>
-              <p>
-                <img src="/ibuki_suzuki.jpg" className='box-shadow' style={{height: 250, borderRadius: 50}}/>
-              </p>
               <p className="h2">鈴木新芽</p>
               <p className=''>
                 略歴:<br />
