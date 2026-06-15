@@ -1,13 +1,13 @@
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Card, Col, Container, Jumbotron, ListGroup, Row } from 'react-bootstrap'
+import { Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
 import Layout from '../components/layout'
 import styles from './index.module.css'
 
 export default function Home() {
   return (
     <Layout>
-      <Jumbotron fluid='true' className={styles.parallax}>
+      <div className={`jumbotron ${styles.parallax}`}>
         <Container id='home'>
           <p className="display-4">コードの品質が<br className="d-md-inline d-none" />気になっていませんか？</p>
           <p className="pt-3">
@@ -15,9 +15,9 @@ export default function Home() {
             合同会社イブキは、全てのコードの品質向上に努めます。
           </p>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className='bg-white'>
+      <div className='jumbotron bg-white'>
         <Container id='service'>
           <Row>
             <Col md="4" className='my-3'>
@@ -44,9 +44,9 @@ export default function Home() {
             </ListGroup>
           </Card>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className="bg-white">
+      <div className="jumbotron bg-white">
         <Container className='text-center' id="member">
           <Row className='justify-content-center'>
             <Col sm='10' md='8' lg="6">
@@ -55,20 +55,20 @@ export default function Home() {
                 <img src="/ibuki_suzuki.jpg" className='box-shadow' style={{height: 250, borderRadius: 50}}/>
               </p>
               <p className="h2">鈴木新芽</p>
-              <p className='text-justify'>
+              <p className=''>
                 略歴:<br />
                 東京大学大学院にて修士(情報理工学)を取得。富士通, REAPRA Venturesを経てフリーランスとして活動開始。その後、合同会社イブキを設立。
               </p>
               <p className='display-4 pt-3'>
                 <a className='text-secondary d-inline' href="https://www.linkedin.com/in/ibukisuzuki/"><FontAwesomeIcon icon={faLinkedin}/></a>
-                <a className='text-secondary d-inline ml-4' href="https://github.com/ibuki/"><FontAwesomeIcon icon={faGithubSquare}/></a>
+                <a className='text-secondary d-inline ms-4' href="https://github.com/ibuki/"><FontAwesomeIcon icon={faGithubSquare}/></a>
               </p>
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className='bg-white'>
+      <div className='jumbotron bg-white'>
         <Container id="practice">
           <p className="h3 mb-5 text-center">重視するプラクティス</p>
           <div className="row featurette align-items-center">
@@ -105,29 +105,29 @@ export default function Home() {
             </div>
           </div>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className={styles.parallax}>
+      <div className={`jumbotron ${styles.parallax}`}>
         <Container id="company">
           <p className="h3 text-center">会社情報</p>
           <Row className='justify-content-center mt-5'>
             <Col md="10" lg="8">
-              <table className="table text-white">
+              <table className="table text-white" style={{'--bs-table-bg': 'transparent', '--bs-table-color': 'white', '--bs-table-border-color': 'rgba(255,255,255,0.3)'}}>
                 <tbody>
                   <tr>
-                    <th scope="row" className='text-right' width="50%" >会社名</th>
+                    <th scope="row" className='text-end' width="50%" >会社名</th>
                     <td>合同会社イブキ</td>
                   </tr>
                   <tr>
-                    <th scope="row" className='text-right'>代表社員</th>
+                    <th scope="row" className='text-end'>代表社員</th>
                     <td>鈴木新芽</td>
                   </tr>
                   <tr>
-                    <th scope="row" className='text-right'>設立</th>
+                    <th scope="row" className='text-end'>設立</th>
                     <td>2020年6月</td>
                   </tr>
                   <tr>
-                    <th scope="row" className='text-right'>社員数</th>
+                    <th scope="row" className='text-end'>社員数</th>
                     <td>1名</td>
                   </tr>
                 </tbody>
@@ -135,9 +135,9 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+      </div>
 
-      <Jumbotron fluid='true' className='bg-white'>
+      <div className='jumbotron bg-white'>
         <Container>
           <Row className='mt-3 justify-content-center'>
             <Col md="10" lg="8">
@@ -151,7 +151,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+      </div>
     </Layout>
   )
 }
